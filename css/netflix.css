@@ -1,0 +1,227 @@
+/* 웹폰트 링크 */
+@font-face { 
+  font-family:Netflix Sans;
+  src:url(../font/NetflixSans_W_Md.woff2)}
+
+/* 타이포그래피 */
+
+h1, h2, h3, h4, h5, h6 { font-family: Netflix Sans; -webkit-font-smoothing: antialiased; color: white;}
+
+/*  <분석>
+font-size: ; line-height: ; font-weight: ; letter-spacing: ;
+
+헤더
+6 로고/ 이미지 대체
+6-2 로그인버튼/ 16, normal, 400, normal
+
+홈
+1 h1/ 64, normal, 700, normal
+4 h2/ 26, normal, 400, normal
+
+3 이메일주소버튼/ 30, normal, 400, 0.1
+5 h3/ 19.2, normal, 400, normal
+
+2 h1/ 50, normal, 700, normal
+4 h2/ 26, normal, 400, normal
+
+퓨터
+6 / 16, normal, 0, normal  _gray
+7 p/ 13, normal, 0, normal   */
+
+
+h1 {font-size: 64px; font-weight: 700;}
+h2 {font-size: 50px; font-weight: 700;}
+h3 {font-size: 30px; font-weight: 400; letter-spacing: 0.1px;}
+h4 {font-size: 26px; font-weight: 400;}
+h5 {font-size: 19.2px; font-weight: 400;}
+h6 {font-size: 16px; }
+
+.h6_logo {font-size: 16px; font-weight: 400;}
+p {font-size: 13px;}
+
+
+/* color */
+.color_bl {color: black;}
+.color_wh {color: white;}
+
+body {background-color: black ;}
+
+.text_align_center { text-align: center;}
+
+
+/* header  */
+.nf_header { width: 100%; height: 100px; padding: 24px 3%; display: flex; justify-content: space-between; position: absolute; top: 0; left: 0;}
+
+#logo { width: 160px; height: 50px; }
+.nf_header button { width: 80px; height: 40px; background-color: red; line-height: 40px; text-align: center; border-radius: 4px;}
+
+
+/* hero */
+main {box-sizing: border-box;}
+.nf_hero { width: 100%; height: 80vh; background-image: url(../img/website_small.jpg); background-size: cover; background-position: center; border-bottom: 8px solid #222222;}
+
+.nf_hero_container { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgba(0,0,0,0.4); background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);}
+
+.nf_hero h1 { margin-bottom: 30px;}
+.nf_hero h4 { margin-bottom: 30px;}
+
+.form_email_container { display:flex; flex-direction: column; }
+.form_email { width: 760px; height: auto; display:flex; justify-content: center; align-items: center; margin-bottom: 20px; }
+  .form_email input { width: 500px; height: 70px; background-color: white; color: gray; line-height: 70px; padding: 0 20px; border-radius: 4px 0 0 4px;}
+  .form_email button { width: 260px; height: 70px; background-color: red; line-height: 70px; text-align: center; border-radius: 0 4px 4px 0;}
+
+  .form_email_p {width: 80%; margin: 0 auto; text-align: center;}
+  
+
+/* content */
+.content {width: 100%; height: auto; background-color: black; border-bottom: 8px solid #222222; padding: 70px 45px; }
+
+.content_ul{ max-width: 1100px;  height: 100%; display: flex; justify-content: space-between; align-items:center; margin: 0 auto; }
+
+.content_text {width: 52%; height: 100%; }
+  .content_text h2 {margin-bottom: 20px;}
+
+.content_ani {width: 48%; height: 100%;  position: relative; overflow: hidden; }
+  .content_ani >img { max-width: 100%;  position: relative; z-index: 2; }
+  .content_vid { position: absolute; z-index: 1;  top: 0; left: 0; width: 100%; height: 100%; max-width: 73%; max-height: 54%; top: 40%; left: 50%; transform: translate(-50%, -50%);  }
+  .content_vid video {width: 100%; height: 100%;}
+
+
+/* FAQ */
+.faq {width: 100%; height: auto; background-color: black; border-bottom: 8px solid #222222; padding: 70px 45px; }
+.faq_container { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items:center; margin: 0 auto;}
+.faq_container h2 {margin-bottom: 42px;}
+
+.accordion_button {width: 800px; height: 70px; background-color: #303030; display: flex; justify-content: space-between; align-items: center; padding: 0 34px; margin: 8px auto 0; box-sizing: border-box; line-height: 24px; font-size: 24px; color: white; }
+.accordion_button::after {width: 26px; height: 26px; background-image: url(../img/icon_plus.svg); transition: transform 0.5s; content: '';}
+
+.panel {width: 800px; height: auto; padding: 40px; background-color: #303030; color: white; box-sizing: border-box; display: none; overflow: hidden; margin: 1px auto 0;} 
+.active::after  { transform: rotate(45deg); }
+
+.form_email_container {margin-top: 58px;}
+
+
+/* footer */
+footer {width: 100%; height: 500px; background-color: black; padding: 70px 45px; color: #757575; }
+  .footer_container { height: 100%; display: block; margin: 0 auto; padding: 0 40px; max-width: 1000px; min-width: 700px; box-sizing: border-box;}
+   .footer_container h6 { margin: 0 0 30px;}
+   .footer_container ul { width: 100%; display: flex; flex-wrap: wrap; }
+   .footer_container li { min-width: 138px; width: 25%; margin-bottom: 16px; display: inline-block;  padding-right: 12px;}
+
+.select_box {width: 130px; height: 40px; display: flex; justify-content: space-between; margin: 20px 0 24px;}
+select {width: 100px; height: 40px;}
+
+.infor {margin-top: 20px; width: 90%;}
+
+
+
+/*/// 미디어쿼리 ///*/
+@media screen and (max-width: 949px) {
+  .nf_hero_container h1 {font-size: 50px; }
+  .form_email_container { flex-direction: column-reverse; }
+  .form_email { flex-direction: column; height: auto;}
+  .form_email input { margin: 20px 0; border-radius: 4px; height: 60px;}
+  .form_email button { border-radius: 4px; width: 180px; height: 44px; }
+  .form_email button h4 {font-size:18px; line-height: 44px;}
+
+
+  /* 쿼리-content */
+  .content_ul { flex-direction: column; justify-content: center; align-items:space-between;}
+   .content_text { width: 85%; }
+    .content_text h2 {text-align: center; font-size: 40px;}
+    .content_text h4 {text-align: center; font-size: 20px; }
+  
+   .content_ani { width: 72%; }
+
+
+   /* 쿼리-faq */
+   .faq_container h2 { font-size: 40px;}
+
+   .accordion_button { width: 90%; height: 58px; padding: 0 24px; }
+   .accordion_button h4 {font-size: 20px;}
+   .accordion_button::after {width: 20px; height: 20px;}
+
+   .panel {width: 90%;}
+   .panel h4 {font-size: 20px;}
+   .form_email_container {margin-top: 36px;}
+   
+
+@media screen and (max-width: 740px) {
+  .form_email input { height: 44px;}
+
+  /* 쿼리-footer */
+  .footer_container { width: 100%;  min-width: 468px; padding: 0 20px;}
+  .footer_container li { width: 33.3333%; }
+  }
+
+
+@media screen and (max-width: 549px) {
+  #logo { width: 100px; height: 28px; }
+  .nf_header button { width: 60px; height: 30px; line-height: 30px; }
+  .h6_logo {font-size: 14px;}
+  .nf_hero { height: 512px;}
+  .nf_hero_container {padding: 40px 5%;}
+  .nf_hero_container h1 { font-size: 28px; margin: 30px 0 30px;}
+  .nf_hero_container h4 { font-size: 18px; text-align: center; margin-bottom: 15px;}
+  .nf_hero_container span { display: block; }
+  .form_email { width: 100%;}
+  .form_email input { margin: 15px 0; width: 100%;}
+  .form_email_p { font-size: 18px; line-height: 24px; width: 80%;}
+
+  /* 쿼리-content */
+    .content_text h2 {font-size: 26px;}
+    .content_text h4 {font-size: 18px; }
+
+  /* 쿼리-faq */
+  .faq { padding: 54px 19px; }
+  .faq_container h2 { font-size: 26px;}
+
+  .accordion_button { width: 100%; height: 52px; padding: 0 18px;}
+  .accordion_button h4 {font-size: 18px;}
+  .accordion_button::after {width: 18px; height: 18px;}
+
+  .panel {width: 100%;}
+  .panel h4 {font-size: 18px;}
+
+    
+@media screen and (max-width: 500px) {
+  .footer_container { padding: 0 5px;}
+  .footer_container li { width: 50%; }
+  }
+
+
+
+/* 반응형 미디어쿼리 */
+0.배경 사이즈 크기 변경
+
+Bp 949 
+1.이메일 버튼이 내려옴
+2.메일 입력 창 아래 텍스트가 올라감
+3.아래 텍스트 위로 올라가면서 커짐
+
+4.특징 부분이 2단>>1단
+5.타이틀 위칙 변화
+
+6.FAQ 양쪽 마진 여백 변화
+7.버튼의 크기가 변화
+8.폰트 사이즈 변화
+
+배경 그라디언트 변화
+
+740
+1.아래 텍스트 크기가 다시 작아짐
+2.이메일 입력 폼 높이가 작아짐
+
+3.퓨터 4단>>3단 변화
+
+549
+1.히어로 높이가 80>>60vh
+2.타이틀 폰트 사이즈 변화
+
+3.특징 높이 변화
+
+4.버튼사이즈가 100% 꽉차는것보다 20px정도 여백잇는게 더이쁨
+5.폰트 사이즈 변화
+
+500
+1.퓨터 3단>>2단 변화
