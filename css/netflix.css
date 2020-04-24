@@ -125,8 +125,6 @@ select {width: 100px; height: 40px;}
 
 
 
-
-
 /*/// 미디어쿼리 ///*/
 @media screen and (max-width: 949px) {
   .nf_hero_container h1 {font-size: 50px; }
@@ -203,6 +201,8 @@ select {width: 100px; height: 40px;}
 @media screen and (max-width: 500px) {
   .footer_container { padding: 0 5px;}
   .footer_container li { width: 50%; }
+
+  .infor { width: 80%;}
   }
 
 
