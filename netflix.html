@@ -93,8 +93,8 @@
       <li class="content_tv">
         <img src="img/tv.png"> 
 
-        <div class="content_vid">
-          <video autoplay muted loop>
+        <div class="content_video_wrap">
+          <video autoplay playsinline muted loop>
             <source src="video/video-tv.m4v" type="video/mp4">
           </video>
         </div>
@@ -107,10 +107,21 @@
   <!-- content_2 시작 -->
   <section class="content">
 
-    <ul class="content_ul_re">
+    <ul class="content_ul_reverse">
+
       <li class="content_down">
         <img src="img/mobile-0819.jpg">
+
+        <div class="downbox">
+          <img src="img/boxshot.png">
+          <div class="downbox_text">
+            <h6>기묘한 이야기</h6>
+            <p>저장 중...</p>
+          </div>
+          <img src="img/download.png">
+        </div>
       </li>
+
       <li class="content_text">
         <h2>즐겨 보는 콘텐츠를 저장해 이동 중에도 시청하세요.</h2>
         <h4>오프라인으로 즐기고 데이터를 절약하세요.</h4>
@@ -127,12 +138,12 @@
         <h2>다양한 디바이스에서 시청하세요.</h2>
         <h4>각종 영화와 TV 프로그램을 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀 없습니다.</h4>
       </li>
-      <li class="content_dv">
+
+      <li class="content_device">
         <img src="img/device-pile.png">
-        <div class="content_vid">
+        <div class="content_video_wrap2">
           <video autoplay playsinline muted loop>
-            <source src="video/video-devices.m4v" type="video/mp4">
-             당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+            <source src="video/video-devices.m4v" type="video/mp4">             
           </video>
         </div>
       </li>
@@ -195,18 +206,19 @@
 
 <!-- footer 시작 -->
 <footer> 
-
+ 
   <div class="footer_container">
 
-    <h6><a>질문이 있으신가요? 고객 센터에 문의하세요.</a></h6>
-    <ul>
+    <section class="service_list">
+     <h6><a>질문이 있으신가요? 고객 센터에 문의하세요.</a></h6>
+     <ul>
        <li><p><a>자주 묻는 질문</a></p></li>
        <li><p><a>고객 센터</a></p></li>
        <li><p><a>계정</a></p></li>
        <li><p><a>미디어 센터</a></p></li>
        <li><p><a>투자 정보(IR)</a></p></li>
        <li><p><a>입사 정보</a></p></li>
-       <li><p><a>Netflix 지원 디바이스</a></p></li>
+       <li><p><a>지원 디바이스</a></p></li>
        <li><p><a>이용 약관</a></p></li>
        <li><p><a>개인정보</a></p></li>
        <li><p><a>쿠키 설정</a></p></li>
@@ -216,34 +228,37 @@
        <li><p><a>법적 고지</a></p></li>
        <li><p><a>Netflix 오리지널</a></p></li>
        <li><p></p></li>
-    </ul>
+     </ul>
+    </section>
    
-<!-- select_box  -->
-    <div class="select_box">
+  
+     <!-- select_box 시작 -->
+      
+      <form class="select_box">
 
-      <i class="fas fa-globe"></i>
-      <form>
+        <div class="select_i"><i class="fas fa-globe"></i></div>
         <select onchange="window.open(options[selectedIndex].value);">
-
-          <option selected value="https://netflix.com/kr/" data-language="ko">한국어</option>
-
-          <option value="https://netflix.com/kr-en/" data-language="en">English</option>
+          <option selected value="https://netflix.com/kr/" data-language="ko"><h6>한국어</h6></option>
+          <option value="https://netflix.com/kr-en/" data-language="en"><h6>English</h6></option>
         </select>
+        
+
       </form>
 
-    </div>
+    <!-- select_box 끝 -->
    
 
-
-    <p>Netflix 대한민국</p>
-    <div class="infor">
-      <p>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호</p>
+    <section class="infor">
+      <p>Netflix 대한민국</p>
+    
+      <p>넷플릭스서비시스코리아 유한회사 통신판매업 신고번호: 제2018-서울종로-0426호</p>
       <p>대표: 레지널드 숀 톰프슨</p>
-      <p>이메일 주소: korea@netflix.com 전화번호 02-6712-6700</p>
-      <p>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</p>
+      <p>전화번호: 02-6712-6700</p>
+      <p>이메일 주소: korea@netflix.com 우편번호: 03161</p>
+      <p>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층</p>
       <p>클라우드 호스팅: Amazon Web Services Inc.</p>
       <p>공정거래위원회 웹사이트 링크</p>
-    </div>
+    </section>
 
  </div>
 
