@@ -58,23 +58,23 @@ body {background-color: black ;}
 
 /* hero */
 main {box-sizing: border-box;}
-.nf_hero { width: 100%; height: 100vh; background-image: url(../img/website_small.jpg); background-size: cover; background-position: center; border-bottom: 1.5px solid #3f3f3f; }
+.nf_hero { width: 100%; height: 100vh; background-image: url(../img/website_small.jpg); background-size: cover; background-position: center; border-bottom: 8px solid #222222; }
 
 .nf_hero_container { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgba(0,0,0,0.4); background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); padding-top: 100px;}
 
 .nf_hero h1 { margin-bottom: 30px;}
 .nf_hero h4 { margin-bottom: 5px;}
 
-.form_email_container { display:flex; flex-direction: column; }
+.form_email_container { display:flex; flex-direction: column; word-break: keep-all;}
 .form_email { width: 760px; height: auto; display:flex; justify-content: center; align-items: center; margin-bottom: 20px; }
-  .form_email input { width: 500px; height: 70px; background-color: white; color: gray; line-height: 70px; padding: 0 20px; border-radius: 4px 0 0 4px;}
-  .form_email button { width: 260px; height: 70px; background-color: red; line-height: 70px; text-align: center; border-radius: 0 4px 4px 0;}
+  .form_email input { width: 500px; height: 60px; background-color: white; color: gray; line-height: 70px; padding: 0 20px; border-radius: 4px 0 0 4px;}
+  .form_email button { width: 254px; height: 60px; background-color: red; line-height: 60px; text-align: center; border-radius: 0 4px 4px 0;}
 
-  .form_email_p {width: 80%; margin: 0 auto; text-align: center;}
+  .form_email_p {margin: 0 auto; text-align: center;}
   
 
 /* content */
-.content {width: 100%; height: auto; background-color: black; border-bottom: 1px solid #3f3f3f; padding: 70px 45px; }
+.content {width: 100%; height: auto; background-color: black; border-bottom: 8px solid #222222;; padding: 70px 45px; word-break: keep-all; }
 
 .content_ul { max-width: 1140px;  height: 100%; display: flex; justify-content: space-between; align-items:center; margin: 0 auto; }
 .content_ul_reverse { max-width: 1140px;  height: 100%; display: flex; justify-content: space-between; align-items:center; margin: 0 auto; }
@@ -82,7 +82,7 @@ main {box-sizing: border-box;}
 .content_text { width: 52%; height: 100%; padding-right: 48px; }
   .content_text h2 {margin-bottom: 20px;}
 
-  
+
 .content_tv {width: 48%; height: 100%;  position: relative; overflow: hidden; }
   .content_tv >img { max-width: 100%;  position: relative; z-index: 2; }
   .content_video_wrap { position: absolute; z-index: 1;  top: 0; left: 0; width: 100%; height: 100%; max-width: 73%; max-height: 54%; top: 46%; left: 50%; transform: translate(-50%, -50%);  }
@@ -102,14 +102,14 @@ main {box-sizing: border-box;}
 
 
 /* FAQ */
-.faq {width: 100%; height: auto; background-color: black;  padding: 70px 45px; border-top: 2px solid #3f3f3f; border-bottom: 0.5px solid #3f3f3f; }
+.faq {width: 100%; height: auto; background-color: black;  padding: 80px 45px; border-bottom: 8px solid #222222; }
 .faq_container { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items:center; margin: 0 auto;}
 .faq_container h2 {margin-bottom: 42px;}
 
 .accordion_button {width: 800px; height: 70px; background-color: #303030; display: flex; justify-content: space-between; align-items: center; padding: 0 34px; margin: 8px auto 0; box-sizing: border-box; line-height: 24px; font-size: 24px; color: white; }
 .accordion_button::after {width: 26px; height: 26px; background-image: url(../img/icon_plus.svg); transition: transform 0.5s; content: '';}
 
-.panel {width: 800px; height: auto; padding: 40px; background-color: #303030; color: white; box-sizing: border-box; display: none; overflow: hidden; margin: 1px auto 0;} 
+.panel {width: 800px; height: auto; padding: 34px; line-height: 34px; background-color: #303030; color: white; box-sizing: border-box; display: none; overflow: hidden; margin: 1px auto 0;} 
 .active::after  { transform: rotate(45deg); }
 
 .form_email_container {margin-top: 58px;}
@@ -122,7 +122,7 @@ footer { width: 100%; background-color: #181818; padding: 50px 78px 38px; color:
    .service_list ul { width: 100%; display: flex; flex-wrap: wrap; margin: 30px 0 0;}
    .service_list li { min-width: 142px; width: 25%; margin-bottom: 16px; display: inline-block;  padding-right: 12px;}
 
-   .select_box {width: 120px; height: 40px; display: flex; justify-content: space-between; margin: 20px 0 24px; padding: 0 10px; border: 1px solid #333333;}
+   .select_box {width: 120px; height: 40px; display: flex; justify-content: space-between; margin: 20px 0 24px; padding: 0 10px; border: 1px solid #333333; border-radius: 4px;}
     .select_i { display: flex; justify-content: center; align-items: center;}
       i {width: 18px; height: 18px;}
     select {width: 70px; }
@@ -138,8 +138,8 @@ footer { width: 100%; background-color: #181818; padding: 50px 78px 38px; color:
   .nf_hero_container h1 {font-size: 50px; }
   .form_email_container { flex-direction: column-reverse; }
   .form_email { flex-direction: column; height: auto;}
-  .form_email input { margin: 20px 0; border-radius: 4px; height: 60px;}
-  .form_email button { border-radius: 4px; width: 180px; height: 44px; }
+  .form_email input { margin: 20px 0; border-radius: 4px; height: 50px;}
+  .form_email button { border-radius: 4px; width: 160px; height: 44px; }
   .form_email button h4 {font-size:18px; line-height: 44px;}
 
 
@@ -182,12 +182,14 @@ footer { width: 100%; background-color: #181818; padding: 50px 78px 38px; color:
   .h6_logo {font-size: 14px;}
   .nf_hero { height: 512px;}
   .nf_hero_container {padding: 40px 5%;}
-  .nf_hero_container h1 { font-size: 28px; margin: 30px 0 30px;}
-  .nf_hero_container h4 { font-size: 18px; text-align: center; margin-bottom: 15px;}
-  .nf_hero_container span { display: block; }
-  .form_email { width: 100%;}
-  .form_email input { margin: 15px 0; width: 100%;}
-  .form_email_p { font-size: 18px; line-height: 24px; width: 80%;}
+   .nf_hero_container h1 { font-size: 28px; margin: 30px 0 30px;}
+   .nf_hero_container h4 { font-size: 18px; line-height: 22px; text-align:center; }
+   .nf_hero_container span { display: block; }
+
+  .form_email_container { margin-top: 20px;}
+   .form_email { width: 100%;}
+    .form_email input { margin: 15px 0; width: 100%;}
+    .form_email_p { font-size: 18px; line-height: 22px; width: 80%;}
 
   /* 쿼리-content */
     .content_text h2 {font-size: 26px;}
@@ -211,6 +213,13 @@ footer { width: 100%; background-color: #181818; padding: 50px 78px 38px; color:
 
 
 @media screen and (max-width: 360px) {
+  /* 쿼리-faq */
+  .accordion_button { padding: 0 14px;}
+
+    .panel {padding: 14px;}
+    .panel h4 { line-height: 22px;}
+
+  /* 쿼리-footer */
   footer {}
    .service_list h6 { font-size: 12px; }
    .service_list p { font-size: 12px; }
